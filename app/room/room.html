@@ -1,0 +1,22 @@
+<div class="row">
+        <div class="box">
+            <div class="col-lg-12 text-center">
+<form role="form" [ngFormModel]="roomForm">
+ <div class="form-group">
+    <label for="naziv">Naziv</label>
+    <input type="text" class="form-control" ngControl='naziv'>
+  </div>
+   <div class="form-group">
+    <label for="broj_kvadrata">Broj kvadrata</label>
+	 <input type="text" class="form-control" ngControl='broj_kvadrata'>
+  </div>
+  <div class="form-group">
+    <label for="broj_kreveta">Broj kreveta</label>
+    <input type="text" class="form-control"  ngControl='broj_kreveta'>
+  </div>
+  <button (click)="onAddRoom()" class="btn btn-default">Add room</button>
+</form>
+
+</div>
+      </div>
+      </div>

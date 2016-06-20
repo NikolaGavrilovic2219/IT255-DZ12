@@ -1,0 +1,37 @@
+[
+  {
+    "id": "56f582067ccdec13dd855ce6",
+    "name": "Soba1",
+    "size": "40",
+    "beds": "4"
+  
+  },
+  {
+    "id": "56f58206714fc1bdbedadde8",
+    "name": "Soba2",
+    "size": "30",
+    "beds": "3"
+  
+	},
+  {
+    "id": "56f58206688d48558b785851",
+    "name": "Soba3",
+    "size": "20",
+    "beds": "2"
+   
+  },
+  {
+    "id": "56f5820699db3339189cf1f3",
+    "name": "Soba4",
+    "size": "15",
+    "beds": "1"
+   
+  },
+  {
+    "id": "56f58206048e0928aec1cc54",
+    "name": "Soba5",
+    "size": "25",
+    "beds": "2"
+   
+  }
+]

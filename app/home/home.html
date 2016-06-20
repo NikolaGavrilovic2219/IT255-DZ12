@@ -1,0 +1,30 @@
+
+<div class="row">
+	<div class="box">
+		<div class="col-lg-12">
+
+			<form class="navbar-form navbar-left" role="search">
+    			<div class="form-group">
+        				Unesite broj kreveta ili broj kvadrata za pretragu:
+        				<input type="text" class="form-control" placeholder="Search" [(ngModel)]="name"> <br/>
+    			</div>
+			</form>
+
+			<div class="col-lg-12">
+			<br/>Sobe<br/> 	<br/>
+
+				<div *ngFor="#sobe of sobe| SearchPipe:name">
+					Naziv: {{sobe.name}}
+					<br/>
+					Velicina: {{sobe.size}}
+					<br/>
+					Broj kreveta: {{sobe.beds}}
+					<br/>	<br/>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>

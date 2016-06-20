@@ -1,0 +1,37 @@
+      <div class="brand">
+         <h1>MetHotel</h1>
+      </div>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               
+               </button>
+               <a class="navbar-brand" [routerLink]="['./Home']">MetHotel</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li [class.active]="router.isRouteActive(router.generate(['/Home']))"><a [routerLink]="['./Home']">Home <span class="sr-only">(current)</span></a></li>
+                  <li [class.active]="router.isRouteActive(router.generate(['/Gallery']))"><a [routerLink]="['./Gallery']">Gallery</a></li>
+               <li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['/SignUp']))"><a [routerLink]="['./SignUp']">Sign Up</a></li>  
+             <li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['/SignIn']))"><a [routerLink]="['./SignIn']">Sign In</a></li>
+              <li [class.active]="router.isRouteActive(router.generate(['/Room']))"><a [routerLink]="['./Room']">Room</a></li>
+               <li [class.active]="router.isRouteActive(router.generate(['/Hotel']))"><a [routerLink]="['./Hotel']">Hotel</a></li>
+            <li *ngIf="isAuth == 'yes'" [class.active]="router.isRouteActive(router.generate(['/Rooms']))"><a [routerLink]="['./Rooms']">Rooms</a></li>
+              <li *ngIf="isAuth == 'yes'" ><a (click)="onLogout()">Sign Out</a></li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+	  <div class="container">
+		<router-outlet></router-outlet>
+	  </div>
+

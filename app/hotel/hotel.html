@@ -1,0 +1,23 @@
+<div class="row">
+        <div class="box">
+            <div class="col-lg-12 text-center">
+			
+		<form role="form" [ngFormModel]="hotelForm">
+		 <div class="form-group">
+			<label for="naziv">Naziv</label>
+			<input type="text" class="form-control" ngControl='naziv'>
+		  </div>
+		   <div class="form-group">
+			<label for="adresa">Adresa</label>
+			 <input type="text" class="form-control" ngControl='adresa'>
+		  </div>
+		  <div class="form-group">
+			<label for="broj_soba">Broj soba</label>
+			<input type="text" class="form-control"  ngControl='broj_soba'>
+		  </div>
+		  <button (click)="onAddHotel()" class="btn btn-default">Add hotel</button>
+		</form>
+
+	</div>
+   </div>
+ </div>
